@@ -36,7 +36,7 @@
                 { "include": "#code" },
                 {
                     "name": "meta.block.parameters.wren",
-                    "begin": "\\|",
+                    "begin": "(?<=\\{)\\s*\\|",
                     "end": "\\|",
                     "patterns": [
                         {
@@ -60,6 +60,10 @@
                 {
                     "name": "keyword.operator.logical.wren",
                     "match": "!|&&|\\|\\|"
+                },
+                {
+                    "name": "keyword.operator.bitwise.wren",
+                    "match": "&|\\||\\^|<<|>>"
                 },
                 {
                     "name": "keyword.operator.range.wren",
